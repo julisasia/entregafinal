@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<div class="card">
+    <div class="card-body">
+     <span style="float: right;"><b>Autor:</b> {{blog.autor}}</span>
+      <h5 class="card-title">{{blog.titulo}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{blog.subtitulo}}</h6>
+      <p class="card-text">{{blog.cuerpo}}</p>
+      <img src="/media/{{ blog.imagen }}" style="width: 100px; height: auto">
+    </div>
+  </div>
+{% endblock %}
+
+

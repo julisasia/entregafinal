@@ -1,0 +1,16 @@
+
+
+{% extends "base.html" %}
+ 
+{% block contenido %}
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <span>{{mensaje}}</span>
+        <br />
+        <button type="submit">Guardar</button>
+
+</form>
+
+{% endblock %}
